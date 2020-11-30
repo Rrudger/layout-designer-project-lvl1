@@ -1,1 +1,76 @@
+body {
+	font-family: serif;
+	font-size: 16px;
+	color: #303846;
+	line-height: 1.5;
+	margin-left:0;
+}
+
+h1 {
+	font-size:3em;
+	margin-bottom: 0;
+	margin-top:0;
+}
+
+h2 {
+	font-size: 1.8em;
+	margin-top:0;
+	margin-bottom:0.5em;
+}
+.header {
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	height:60px;
+	padding:5px 20px 5px 20px;
+	border-bottom-style:solid;
+	border-bottom-width:2px;
+	background:#fff;
+	display:flex;
+	justify-content:space-between;
+}
+
+.horizontal_menu {
+	display: flex;
+	align-items:center;
+	justify-content: flex-end;
+	list-style: none;
+}
+
+.horizontal_menu li {
+	padding:0 10px;
+}
+
+.logo {
+	display:flex;
+	align-items:center;
+}
+
+.block1{
+	width:1000px;
+	flex:1 1 auto;
+	margin: 60px 0 60px;
+	padding: 20px 0 20px;
+	background: url("../images/banner.png");
+	background-position:center;
+	background-size:cover;
+	color:#fff;
+	text-align:center;
+}
+
+.block1 a{
+	text-decoration:none;
+	font-size:1em;
+	font-weight:bold;
+	color:#fff;
+	border: 2px solid #fff;
+	border-radius:10px;
+	margin:0 10px;
+	padding:5px;
+}
+
+main {}
+
+
 /** CSS STYLE **/
