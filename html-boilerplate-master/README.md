@@ -17,3 +17,6 @@ $ make install
 ```sh
 make lint
 ```
+surge:
+black-territory.surge.sh
+

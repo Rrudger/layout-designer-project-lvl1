@@ -13,6 +13,19 @@ body {
 	flex-direction:column;
 }
 
+main {
+        flex:1 0 auto;
+}
+
+footer {
+        flex: 0 0 auto;
+        background-color:#303846;
+        color:white;
+        padding:60px 40px;
+        display:flex;
+        justify-content:space-between;
+}
+
 h1 {
 	font-size:3em;
 	margin-bottom: 0;
@@ -40,14 +53,14 @@ h2 {
 	justify-content:space-between;
 }
 
-.horizontal_menu {
+.horizontal-menu {
 	display: flex;
 	align-items:center;
 	justify-content: flex-end;
 	list-style: none;
 }
 
-.horizontal_menu li {
+.horizontal-menu li {
 	padding:0 10px;
 }
 
@@ -93,7 +106,7 @@ nav a {
 	padding:5px;
 }
 
-.inside_block {
+.inside-block {
 	width:1000px;
 	padding:60px 20px;
 	display:flex;
@@ -101,11 +114,11 @@ nav a {
 	justify-content:space-between;
 }
 
-.inside_block .textblock {
+.inside-block .textblock {
         width:45%;
 }
 
-.inside_block img {
+.inside-block img {
         width:30%;
         max-width:100%;
         height:auto;
@@ -116,22 +129,9 @@ nav a {
 	width:30%;
 }
 
-.about_JK {
+.about-JK {
 	width:100%;
 	background-color:#f7f7f7;
-}
-
-main {
-	flex:1 0 auto;
-}
-
-footer {
-	flex: 0 0 auto;
-	background-color:#303846;
-	color:white;
-	padding:60px 40px;
-	display:flex;
-	justify-content:space-between;
 }
 
 footer h2 {
@@ -139,13 +139,13 @@ footer h2 {
 	color:white;
 }
 
-.column {
+.footer-column {
 	margin:0 40px;
 }
 
 
 
-#background_form {
+#background-form {
 	background-color:#f7f7f7;
 	position:fixed;
 	width:100%;
@@ -154,45 +154,45 @@ footer h2 {
 	left:0;
 }
 
-#order_form {
+#order-form {
 	margin-left:auto;
 	margin-right:auto;
 	width:50%;
 }
 
-#order_form fieldset {
+#order-form fieldset {
 	border:1px solid #09d3ac;
 }
 
-#order_form legend {
+#order-form legend {
 	color:#09d3ac;
 	font-weight:bold;
 }
 
-#order_form .button{
+#order-form .button{
 	color:#09d3ac;
 	border:1px solid #09d3ac;
 	padding:10px;
 	margin:20px;
 }
 
-#order_form h2 {
+#order-form h2 {
 	padding:10px;
 	text-align:center;
 }
 
-.field_name {
-	grid-area:field_name;
+.field-name {
+	grid-area:field-name;
 }
 
 .field {
 	grid-area:field;
 }
 
-.main_field {
+.main-field {
 	display:grid;
 	grid-template-columns:repeat(10, 1fr);
-	grid-template-areas:"field_name field_name field field field field field field field field";
+	grid-template-areas:"field-name field-name field field field field field field field field";
 	justify-items:start;
 }
 
