@@ -23,32 +23,32 @@
 			<main>
 		<div class='block1'>
 			<div class='textblock'>
-				<img src="images/logo.svg" height="60px" alt="logo"/>
+				<img src="images/logo.svg" alt="logo"/>
 				<h1>ЖК "Лунное море"</h1>
 				<p>Место, откуда не хочется улетать</p>
-				<a class ="button" href="form.html">Забронировать</a>
+				<a class ="button" href="#order-form">Забронировать</a>
 			</div>
 		</div>
 
-		<section class="advantage"><a name="advantage"></a>
+		<section id="advantage">
 			<div class="inside-block">
-			<div class="textblock">
+			<div class="textblock-width30">
 				<h2>Уникальный вид</h2>
 				<p>Вид на космос из вашего окна. Мы построили дома с большими окнами, чтобы вы могли наслаждаться метеоритными потоками.</p>
 			</div>
-			<div class="textblock">
+			<div class="textblock-width30">
 				<h2>Инфраструктура</h2>
 				<p>Прекрасные дороги рядом с домом. Много мест для прогулки. Всего в 200 км. от посёлка находится кольцо гор Кордильеры, на которых вы сможете провести незабываемые выходные.</p>
 			</div>
-			<div class="textblock">
+			<div class="textblock-width30">
 				<h2>Близость к Москве</h2>
 				<p>При небольшой цене мы располагаемся близко к МКАД. Всего 384 000 километров и вы в самом сердце России.</p>
 			</div>
 			</div>
 		</section>
-		<section class="about-JK"><a name="about-JK"></a>
+		<section id="about-JK">
 			<div class="inside-block">
-			<div class="textblock">
+			<div class="textblock-width45">
 				<h2>О ЖК «Лунное море»</h2>
 				<p>Все чаще жители Москвы предпочитают загородный дом городской квартире, к тому же связь с мегаполисом не теряется – современные скоростные трассы позволяют без труда добираться до столицы и обратно.</p>
 				<p>Мы построили наши дома на самом близком к Солнцу спутнике, всего в 380 тысяч километров от Земли.</p>
@@ -56,16 +56,63 @@
 				<img src="images/moon-1.jpg" alt="moon1">
 			</div>
 		</section>
-		<section class="place-for-rest"><a name="place-for-rest"></a>
+		<section id="place-for-rest">
 			<div class="inside-block">
 			<img src="images/moon-2.jpg" alt="moon2">
-			<div class="textblock">
+			<div class="textblock-width45">
 				<h2>Места для отдыха</h2>
 				<p>Луна обладает всеми условиями для комфортного отдыха от большого города. В вашем распоряжении 22 моря и 18 гор. Самое ближайшее кольцо гор всего в 200 километров от вашей квартиры.</p>
 				<p>Дома располагаются в новом районе «Лунные моря». При необходимости есть автобусы до района «Лунный материк».</p>
 			</div>
 			</div>
 		</section>
+		<div id="background-form">
+			<form id="order-form">
+				<div id="form-inside-block">
+				<h2>Оставьте заявку сегодня!</h2>
+				<fieldset>
+					<legend>Параметры квартиры</legend>
+					<div class="main-field">
+						<div class="field-name">
+							<p>Количество комнат:</p>
+							<p>Отделка:</p>
+						</div>
+
+						<div class="field">
+							<p><select name="camera-select">
+								<option value="1" selected >1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+							</select></p>
+
+							<p><select name="decorating">
+								<option value="1" selected>Без отделки</option>
+								<option value="2">Эконом</option>
+								<option value="3">Люкс</option>
+							</select></p>
+						</div>
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Контактная информация</legend>
+					<div class="main-field">
+						<div class="field-name">
+							<p><label for="input-name">Имя:</label></p>
+							<p><label for="input-tel">Телефон:</label></p>
+							<p><label for="input-email">E-mail:</label></p>
+						</div>
+						<div class="field">
+							<p><input type="text" id="input-name"></p>
+							<p><input type="text" id="input-tel"</p>
+							<p><input type="text" id="input-email"></p>
+						</div>
+					</div>
+				</fieldset>
+				<p><input type="submit" class="button" form="order-form" value="Отправить"></p>
+				</div>
+			</form>
+		</div>
+
 	</main>
 <footer>
 		<div class="footer-column">

@@ -1,5 +1,5 @@
 html, body {
-	height:100%;
+	height: 100%;
 }
 
 body {
@@ -7,193 +7,225 @@ body {
 	font-size: 16px;
 	color: #303846;
 	line-height: 1.5;
-	margin-left:0;
-	margin-right:0;
-	display:flex;
-	flex-direction:column;
+	margin-left: 0;
+	margin-right: 0;
+	display: flex;
+	flex-direction: column;
+	padding: 0;
 }
 
 main {
-        flex:1 0 auto;
+        flex: 1 0 auto;
 }
 
 footer {
         flex: 0 0 auto;
-        background-color:#303846;
-        color:white;
-        padding:60px 40px;
-        display:flex;
-        justify-content:space-between;
+        background-color: #303846;
+        color: white;
+        padding: 60px 40px;
+        display: flex;
+        justify-content: space-between;
 }
 
 h1 {
-	font-size:3em;
+	font-size: 3em;
 	margin-bottom: 0;
-	margin-top:0;
+	margin-top: 0;
 }
 
 h2 {
 	font-size: 1.8em;
-	margin-top:0;
-	margin-bottom:0.5em;
-	white-space:nowrap;
+	margin-top: 0;
+	margin-bottom: 0.5em;
+	white-space: nowrap;
 }
 
 .header {
-	position:fixed;
-	top:0;
-	left:0;
-	right:0;
-	height:60px;
-	padding:5px 20px 5px 20px;
-	border-bottom-style:solid;
-	border-bottom-width:2px;
-	background:#fff;
-	display:flex;
-	justify-content:space-between;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 60px;
+	padding: 5px 20px 5px 20px;
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+	background: #fff;
+	display: flex;
+	justify-content: space-between;
 }
 
 .horizontal-menu {
 	display: flex;
-	align-items:center;
+	align-items: center;
 	justify-content: flex-end;
 	list-style: none;
 }
 
 .horizontal-menu li {
-	padding:0 10px;
+	padding: 0 10px;
 }
 
 nav a {
-	color:#303846;
-	text-decoration:none;
+	color: #303846;
+	text-decoration: none;
 }
 
 .logo {
-	display:flex;
-	align-items:center;
+	display: flex;
+	align-items: center;
 }
 
 .logo img {
-	margin-right:10px;
+	margin-right: 10px;
+}
+
+section {
+	display: flex;
+	align-items: center;
+	align-content: center; 
+	justify-content: center;
 }
 
 .block1{
-	width:100%;
-	flex:1 1 auto;
+	width: 100%;
+	flex: 1 1 auto;
 	margin: 60px 0 60px;
 	padding: 20px 0 20px;
 	background: url("../images/banner.png");
-	background-position:center;
-	background-size:cover;
-	color:#fff;
+	background-position: center;
+	background-size: cover;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	align-content: center; 
+	justify-content: center;
 }
 
 .block1 .textblock {
-	width:1000px;
-	text-align:center;
-	padding:0 40px;
+	width: 1000px;
+	text-align: center;
+	padding: 0 40px;
+}
+
+.block1 .textblock img {
+	height: 10em;
 }
 
 .button{
-	text-decoration:none;
-	font-size:1em;
-	font-weight:bold;
-	color:#fff;
+	text-decoration: none;
+	font-size: 1em;
+	font-weight: bold;
+	color: #fff;
 	border: 2px solid #fff;
-	border-radius:10px;
-	margin:0 10px;
-	padding:5px;
+	border-radius: 10px;
+	margin: 0 10px;
+	padding: 5px;
 }
 
 .inside-block {
-	width:1000px;
-	padding:60px 20px;
-	display:flex;
-        flex-direction:row;
-	justify-content:space-between;
+	width: 1000px;
+	padding: 60px 60px;
+	display: flex;
+        flex-direction: row;
+	justify-content: space-between;
 }
 
-.inside-block .textblock {
-        width:45%;
+.textblock-width45 {
+        width: 45%;
 }
 
 .inside-block img {
-        width:30%;
-        max-width:100%;
-        height:auto;
-        margin:auto;
+        width: 30%;
+        max-width: 100%;
+        height: auto;
+        margin: auto;
 }
 
-.advantage .textblock {
-	width:30%;
+.textblock-width30 {
+	width: 30%;
 }
 
-.about-JK {
-	width:100%;
-	background-color:#f7f7f7;
+#about-JK {
+	width: 100%;
+	background-color: #f7f7f7;
 }
 
 footer h2 {
-	font-size:1em;
-	color:white;
+	font-size: 1em;
+	color: white;
 }
 
 .footer-column {
-	margin:0 40px;
+	margin: 0 40px;
 }
 
 
 
 #background-form {
-	background-color:#f7f7f7;
-	position:fixed;
-	width:100%;
-	height:100%;
-	top:0;
-	left:0;
+	background-color: #f7f7f7;
+	margin-bottom:-20px;
 }
 
 #order-form {
-	margin-left:auto;
-	margin-right:auto;
-	width:50%;
+	padding: 60px 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1000px;
+}
+
+#form-inside-block {
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
 }
 
 #order-form fieldset {
-	border:1px solid #09d3ac;
+	margin: 10px 0;
+	border: 2px solid #09d3ac;
 }
 
 #order-form legend {
-	color:#09d3ac;
-	font-weight:bold;
+	color: #09d3ac;
+	font-weight: bold;
 }
 
 #order-form .button{
-	color:#09d3ac;
-	border:1px solid #09d3ac;
-	padding:10px;
-	margin:20px;
+	color: #09d3ac;
+	border: 2px solid #09d3ac;
+	padding: 10px;
+	margin: 10px 0;
+	width: 30%;
 }
 
 #order-form h2 {
-	padding:10px;
-	text-align:center;
+	padding: 10px;
+	text-align: center;
 }
 
 .field-name {
-	grid-area:field-name;
+	margin: 0 20px;
+	grid-area: field-name;
+	font-weight: bold;
 }
 
 .field {
-	grid-area:field;
+	margin: 0 20px;
+	grid-area: field;
 }
 
 .main-field {
-	display:grid;
-	grid-template-columns:repeat(10, 1fr);
-	grid-template-areas:"field-name field-name field field field field field field field field";
-	justify-items:start;
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+	grid-template-areas: "field-name field-name field-name field-name field-name field field field field field field";
+}
+
+select {
+	width: 100%;
+}
+
+.field input {
+	width: 93%;
+
 }
 
 /** CSS STYLE **/
