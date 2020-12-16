@@ -1,3 +1,28 @@
+:root { 
+        --grey: #303846;      
+        --green: #09d3ac;      
+        --yellow: #f7f7f7;      
+}
+
+.flex-block {
+	display: flex;
+	justify-content: space-between;
+}
+
+.container {
+        width: 1000px;
+        padding: 60px 15px 60px 15px;
+        justify-content: space-around;
+}
+
+.width-30 {
+        width: 30%;
+}
+
+.width-45 {
+        width: 45%;
+}
+
 html, body {
 	height: 100%;
 }
@@ -5,26 +30,16 @@ html, body {
 body {
 	font-family: sans-serif;
 	font-size: 16px;
-	color: #303846;
+	color: var(--grey);
 	line-height: 1.5;
 	margin-left: 0;
 	margin-right: 0;
-	display: flex;
 	flex-direction: column;
 	padding: 0;
 }
 
 main {
         flex: 1 0 auto;
-}
-
-footer {
-        flex: 0 0 auto;
-        background-color: #303846;
-        color: white;
-        padding: 60px 40px;
-        display: flex;
-        justify-content: space-between;
 }
 
 h1 {
@@ -50,12 +65,9 @@ h2 {
 	border-bottom-style: solid;
 	border-bottom-width: 2px;
 	background: #fff;
-	display: flex;
-	justify-content: space-between;
 }
 
 .horizontal-menu {
-	display: flex;
 	align-items: center;
 	justify-content: flex-end;
 	list-style: none;
@@ -66,27 +78,19 @@ h2 {
 }
 
 nav a {
-	color: #303846;
+	color: var(--grey);
 	text-decoration: none;
 }
 
-.logo {
-	display: flex;
+.logo{
 	align-items: center;
 }
 
-.logo img {
-	margin-right: 10px;
-}
-
-section {
-	display: flex;
-	align-items: center;
-	align-content: center; 
+.section { 
 	justify-content: center;
 }
 
-.block1{
+.description{
 	width: 100%;
 	flex: 1 1 auto;
 	margin: 60px 0 60px;
@@ -95,20 +99,27 @@ section {
 	background-position: center;
 	background-size: cover;
 	color: #fff;
-	display: flex;
 	align-items: center;
 	align-content: center; 
 	justify-content: center;
 }
 
-.block1 .textblock {
-	width: 1000px;
+.description .container {
 	text-align: center;
 	padding: 0 40px;
 }
 
-.block1 .textblock img {
+.description .container img {
 	height: 10em;
+}
+
+.logo img {
+        margin-right: 10px;
+}
+
+.width-30 img{
+        max-width: 100%;
+        max-height: 100%;
 }
 
 .button{
@@ -122,34 +133,15 @@ section {
 	padding: 5px;
 }
 
-.inside-block {
-	width: 1000px;
-	padding: 60px 0 60px 0px;
-	display: flex;
-        flex-direction: row;
-	justify-content: space-between;
-}
-
-.textblock-width45 {
-        width: 45%;
-}
-
-.inside-block img {
-        width: 30%;
-        max-width: 100%;
-        height: auto;
-        margin: auto;
-	margin-right:0;
-	margin-left:0;
-}
-
-.textblock-width30 {
-	width: 30%;
-}
-
-#about-JK {
+.about-JK {
 	width: 100%;
-	background-color: #f7f7f7;
+	background-color: var(--yellow);
+}
+
+footer {
+        flex: 0 0 auto;
+        background-color: var(--grey);
+        color: #fff;
 }
 
 footer h2 {
@@ -157,49 +149,50 @@ footer h2 {
 	color: white;
 }
 
-.footer-column {
-	margin: 0 40px;
+footer .container{
+	width: 100%;
+	justify-content: space-between;
+	margin: 0 20px;
 }
 
 
 
-#background-form {
-	background-color: #f7f7f7;
+.background-form {
+	background-color: var(--yellow);
 	margin-bottom:-20px;
 }
 
-#order-form {
+.order-form {
 	padding: 60px 0;
 	margin-left: auto;
 	margin-right: auto;
 	width: 1000px;
 }
 
-#form-inside-block {
+.form-container {
 	margin-left: auto;
 	margin-right: auto;
 	width: 50%;
 }
 
-#order-form fieldset {
+.order-form fieldset {
 	margin: 10px 0;
-	border: 2px solid #09d3ac;
+	border: 2px solid var(--green);
 }
 
-#order-form legend {
-	color: #09d3ac;
+.order-form legend {
+	color: var(--green);
 	font-weight: bold;
 }
 
-#order-form .button{
-	color: #09d3ac;
-	border: 2px solid #09d3ac;
+.order-form .button{
+	color: var(--green);
+	border: 2px solid var(--green);
 	padding: 10px;
 	margin: 10px 0;
-	width: 30%;
 }
 
-#order-form h2 {
+.order-form h2 {
 	padding: 10px;
 	text-align: center;
 }
@@ -217,8 +210,8 @@ footer h2 {
 
 .main-field {
 	display: grid;
-	grid-template-columns: repeat(10, 1fr);
-	grid-template-areas: "field-name field-name field-name field-name field-name field field field field field field";
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-areas: "field-name field";
 }
 
 select {

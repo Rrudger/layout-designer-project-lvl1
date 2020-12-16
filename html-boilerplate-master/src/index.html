@@ -8,11 +8,11 @@
 
     <link rel="stylesheet" href="styles/style.css">
 </head>
-<body>
-	<header class='header'>
-		<div class='logo'><img src='images/logo.svg' height='60px' alt='logo'> Лунное море</div>
+<body class='flex-block'>
+	<header class='flex-block header'>
+		<div class='flex-block logo'><img src='images/logo.svg' height='60px' alt='logo'> Лунное море</div>
 		<nav>
-			<ul class='horizontal-menu'>
+			<ul class='flex-block horizontal-menu'>
 				<li><a href="#advantage">Преимущества</a></li>
 				<li><a href="#about-JK">О ЖК "Лунное море"</a></li>
 				<li><a href="#place-for-rest">Места для отдыха</a></li>
@@ -21,8 +21,8 @@
 	</header>
 
 			<main>
-		<div class='block1'>
-			<div class='textblock'>
+		<div class='flex-block description'>
+			<div class='container'>
 				<img src="images/logo.svg" alt="logo"/>
 				<h1>ЖК "Лунное море"</h1>
 				<p>Место, откуда не хочется улетать</p>
@@ -30,45 +30,45 @@
 			</div>
 		</div>
 
-		<section id="advantage">
-			<div class="inside-block">
-			<div class="textblock-width30">
+		<section class='flex-block section' id="advantage">
+			<div class="flex-block container">
+			<div class="width-30">
 				<h2>Уникальный вид</h2>
 				<p>Вид на космос из вашего окна. Мы построили дома с большими окнами, чтобы вы могли наслаждаться метеоритными потоками.</p>
 			</div>
-			<div class="textblock-width30">
+			<div class="width-30">
 				<h2>Инфраструктура</h2>
 				<p>Прекрасные дороги рядом с домом. Много мест для прогулки. Всего в 200 км. от посёлка находится кольцо гор Кордильеры, на которых вы сможете провести незабываемые выходные.</p>
 			</div>
-			<div class="textblock-width30">
+			<div class="width-30">
 				<h2>Близость к Москве</h2>
 				<p>При небольшой цене мы располагаемся близко к МКАД. Всего 384 000 километров и вы в самом сердце России.</p>
 			</div>
 			</div>
 		</section>
-		<section id="about-JK">
-			<div class="inside-block">
-			<div class="textblock-width45">
+		<section id="about-JK" class="flex-block section about-JK">
+			<div class="flex-block container">
+			<div class="width-45">
 				<h2>О ЖК «Лунное море»</h2>
 				<p>Все чаще жители Москвы предпочитают загородный дом городской квартире, к тому же связь с мегаполисом не теряется – современные скоростные трассы позволяют без труда добираться до столицы и обратно.</p>
 				<p>Мы построили наши дома на самом близком к Солнцу спутнике, всего в 380 тысяч километров от Земли.</p>
 			</div>
-				<img src="images/moon-1.jpg" alt="moon1">
+			<div class="width-30 image"><img src="images/moon-1.jpg" alt="moon1"></div>
 			</div>
 		</section>
-		<section id="place-for-rest">
-			<div class="inside-block">
-			<img src="images/moon-2.jpg" alt="moon2">
-			<div class="textblock-width45">
+		<section id="place-for-rest" class="flex-block section">
+			<div class="flex-block container">
+			<div class="width-30"><img src="images/moon-2.jpg" alt="moon2"></div>
+			<div class="width-45">
 				<h2>Места для отдыха</h2>
 				<p>Луна обладает всеми условиями для комфортного отдыха от большого города. В вашем распоряжении 22 моря и 18 гор. Самое ближайшее кольцо гор всего в 200 километров от вашей квартиры.</p>
 				<p>Дома располагаются в новом районе «Лунные моря». При необходимости есть автобусы до района «Лунный материк».</p>
 			</div>
 			</div>
 		</section>
-		<div id="background-form">
-			<form id="order-form">
-				<div id="form-inside-block">
+		<div class="background-form">
+			<form id="order-form" class="order-form">
+				<div class="form-container">
 				<h2>Оставьте заявку сегодня!</h2>
 				<fieldset>
 					<legend>Параметры квартиры</legend>
@@ -108,18 +108,19 @@
 						</div>
 					</div>
 				</fieldset>
-				<p><input type="submit" class="button" form="order-form" value="Отправить"></p>
+				<p><input type="submit" class="width-30 button" form="order-form" value="Отправить"></p>
 				</div>
 			</form>
 		</div>
 
 	</main>
-<footer>
-		<div class="footer-column">
-			<div class="logo"><img src='images/logo.svg' height='60px' alt='logo'><h2>Лунное море</h2></div>
+<footer class="flex-block section">
+	<div class="flex-block container">
+		<div>
+			<div class="flex-block logo"><img src='images/logo.svg' height='60px' alt='logo'><h2>Лунное море</h2></div>
 			<p><small>&copy 2032 год</small></p>
 		</div>
-		<div class="footer-column">
+		<div>
 			<h2>Проектная документация</h2>
 			<ul>
 				<li>Скачать</li>
@@ -127,7 +128,7 @@
 			</ul>
 
 		</div>
-		<div class="footer-column">
+		<div>
 			<h2>О застройщике</h2>
 			<ul>
 				<li>Отзывы</li>
@@ -135,7 +136,7 @@
 			</ul>
 
 		</div>
-	
+		</div>
 </footer>
 </body>
 </html>
