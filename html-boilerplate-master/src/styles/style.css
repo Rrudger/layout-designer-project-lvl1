@@ -1,7 +1,8 @@
 :root { 
         --grey: #303846;      
         --green: #09d3ac;      
-        --yellow: #f7f7f7;      
+        --yellow: #f7f7f7;
+	--white: #fff;
 }
 
 .flex-block {
@@ -64,7 +65,7 @@ h2 {
 	padding: 5px 20px 5px 20px;
 	border-bottom-style: solid;
 	border-bottom-width: 2px;
-	background: #fff;
+	background: var(--white);
 }
 
 .horizontal-menu {
@@ -98,7 +99,7 @@ nav a {
 	background: url("../images/banner.png");
 	background-position: center;
 	background-size: cover;
-	color: #fff;
+	color: var(--white);
 	align-items: center;
 	align-content: center; 
 	justify-content: center;
@@ -126,8 +127,8 @@ nav a {
 	text-decoration: none;
 	font-size: 1em;
 	font-weight: bold;
-	color: #fff;
-	border: 2px solid #fff;
+	color: var(--white);
+	border: 2px solid var(--white);
 	border-radius: 10px;
 	margin: 0 10px;
 	padding: 5px;
@@ -141,7 +142,7 @@ nav a {
 footer {
         flex: 0 0 auto;
         background-color: var(--grey);
-        color: #fff;
+        color: var(--white);
 }
 
 footer h2 {
@@ -163,10 +164,8 @@ footer .container{
 }
 
 .order-form {
-	padding: 60px 0;
 	margin-left: auto;
 	margin-right: auto;
-	width: 1000px;
 }
 
 .form-container {
@@ -214,13 +213,9 @@ footer .container{
 	grid-template-areas: "field-name field";
 }
 
-select {
+.select-style {
+	box-sizing: border-box;
 	width: 100%;
-}
-
-.field input {
-	width: 93%;
-
 }
 
 /** CSS STYLE **/
