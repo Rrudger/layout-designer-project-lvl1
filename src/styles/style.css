@@ -1,19 +1,29 @@
 :root { 
-        --grey: #303846;      
+        --dark: #303846;      
         --green: #09d3ac;      
-        --yellow: #f7f7f7;
-	--white: #fff;
+        --light-secondary: #f7f7f7;
+	--light: #fff;
 }
 
 .flex-block {
 	display: flex;
+}
+
+.flex-between {
 	justify-content: space-between;
+}
+
+.flex-around {
+	justify-content: space-around;
+}
+
+.flex-center {
+	justify-content: center;
 }
 
 .container {
         width: 1000px;
         padding: 60px 15px 60px 15px;
-        justify-content: space-around;
 }
 
 .width-30 {
@@ -31,8 +41,9 @@ html, body {
 body {
 	font-family: sans-serif;
 	font-size: 16px;
-	color: var(--grey);
+	color: var(--dark);
 	line-height: 1.5;
+	margin-top:60px;
 	margin-left: 0;
 	margin-right: 0;
 	flex-direction: column;
@@ -53,7 +64,7 @@ h2 {
 	font-size: 1.8em;
 	margin-top: 0;
 	margin-bottom: 0.5em;
-	white-space: nowrap;
+	light-space: nowrap;
 }
 
 .header {
@@ -63,9 +74,8 @@ h2 {
 	right: 0;
 	height: 60px;
 	padding: 5px 20px 5px 20px;
-	border-bottom-style: solid;
-	border-bottom-width: 2px;
-	background: var(--white);
+	background: var(--light);
+	font-weight: bold;
 }
 
 .horizontal-menu {
@@ -79,27 +89,23 @@ h2 {
 }
 
 nav a {
-	color: var(--grey);
+	color: var(--dark);
 	text-decoration: none;
 }
 
-.logo{
+.logo {
 	align-items: center;
 }
 
-.section { 
-	justify-content: center;
-}
-
-.description{
+.description {
 	width: 100%;
 	flex: 1 1 auto;
-	margin: 60px 0 60px;
+	margin: 0 0 60px;
 	padding: 20px 0 20px;
 	background: url("../images/banner.png");
 	background-position: center;
 	background-size: cover;
-	color: var(--white);
+	color: var(--light);
 	align-items: center;
 	align-content: center; 
 	justify-content: center;
@@ -115,7 +121,9 @@ nav a {
 }
 
 .logo img {
+	height: 3em;
         margin-right: 10px;
+
 }
 
 .width-30 img{
@@ -127,40 +135,35 @@ nav a {
 	text-decoration: none;
 	font-size: 1em;
 	font-weight: bold;
-	color: var(--white);
-	border: 2px solid var(--white);
+	color: var(--light);
+	border: 2px solid var(--light);
 	border-radius: 10px;
 	margin: 0 10px;
-	padding: 5px;
-}
-
-.about-JK {
-	width: 100%;
-	background-color: var(--yellow);
+	padding: 10px;
+	cursor: pointer;
 }
 
 footer {
         flex: 0 0 auto;
-        background-color: var(--grey);
-        color: var(--white);
+        background-color: var(--dark);
+        color: var(--light);
+	font-weight: bold;
 }
 
 footer h2 {
 	font-size: 1em;
-	color: white;
+	color: light;
 }
 
 footer .container{
-	width: 100%;
 	justify-content: space-between;
 	margin: 0 20px;
 }
 
 
 
-.background-form {
-	background-color: var(--yellow);
-	margin-bottom:-20px;
+.background-secondary {
+	background-color: var(--light-secondary);
 }
 
 .order-form {
