@@ -8,8 +8,8 @@
 
     <link rel="stylesheet" href="styles/style.css">
 </head>
-<body class='flex-block'>
-	<header class='flex-block flex-between header'>
+<body class='flex-block flex-column'>
+	<header class='flex-block flex-between flex-align-center header'>
 		<div class='flex-block logo'><img src='images/logo.svg' alt='Moon-mare-logo'> Лунное море</div>
 		<nav>
 			<ul class='flex-block horizontal-menu'>
@@ -21,16 +21,16 @@
 	</header>
 
 			<main>
-		<section class='flex-block description'>
-			<div class='container'>
-				<img src="images/logo.svg" alt="Moon-mare-logo"/>
+		<section class='description' id='description'>
+			<div class='container flex-between'>
+			<img src="images/logo.svg" alt="Moon-mare-logo"/>
 				<h1>ЖК "Лунное море"</h1>
 				<p>Место, откуда не хочется улетать</p>
 				<a class ="button" href="#order-form">Забронировать</a>
 			</div>
 		</section>
 
-		<section class='flex-block flex-center' id="advantage">
+		<section class='advantage' id="advantage">
 			<div class="flex-block flex-around container">
 			<div class="width-30">
 				<h2>Уникальный вид</h2>
@@ -46,7 +46,7 @@
 			</div>
 			</div>
 		</section>
-		<section id="about-jk" class="flex-block flex-center background-secondary">
+		<section id="about-jk" class="about-jk background-secondary">
 			<div class="flex-block flex-around container">
 			<div class="width-45">
 				<h2>О ЖК «Лунное море»</h2>
@@ -56,7 +56,7 @@
 			<div class="width-30 image"><img src="images/moon-1.jpg" alt="Image-moon"></div>
 			</div>
 		</section>
-		<section id="place-for-rest" class="flex-block flex-center">
+		<section id="place-for-rest" class="place-for-rest">
 			<div class="flex-block flex-around container">
 			<div class="width-30"><img src="images/moon-2.jpg" alt="Image-astronaut"></div>
 			<div class="width-45">
@@ -72,20 +72,18 @@
 				<h2>Оставьте заявку сегодня!</h2>
 				<fieldset>
 					<legend>Параметры квартиры</legend>
-					<div class="main-field">
-						<div class="field-name">
+					<div class="main-field flex-block flex-column">
+						<div class="field flex-block flex-row flex-between">
 							<p>Количество комнат:</p>
-							<p>Отделка:</p>
-						</div>
-
-						<div class="field">
-							<p><select name="camera-select" class="select-style">
+              <p><select name="camera-select" class="select-style">
 								<option value="1" selected >1</option>
 								<option value="2">2</option>
 								<option value="3">3</option>
 							</select></p>
-
-							<p><select name="decorating" class="select-style">
+            </div>
+            <div class="field flex-block flex-row flex-between">
+							<p>Отделка:</p>
+              <p><select name="decorating" class="select-style">
 								<option value="1" selected>Без отделки</option>
 								<option value="2">Эконом</option>
 								<option value="3">Люкс</option>
@@ -95,16 +93,18 @@
 				</fieldset>
 				<fieldset>
 					<legend>Контактная информация</legend>
-					<div class="main-field">
-						<div class="field-name">
+					<div class="main-field flex-block flex-column">
+						<div class="field flex-block flex-row flex-between">
 							<p><label for="input-name">Имя:</label></p>
+              <p><input type="text" id="input-name" class="select-style"></p>
+            </div>
+            <div class="field flex-block flex-row flex-between">
 							<p><label for="input-tel">Телефон:</label></p>
+              <p><input type="text" id="input-tel" class="select-style"></p>
+            </div>
+            <div class="field flex-block flex-row flex-between">
 							<p><label for="input-email">E-mail:</label></p>
-						</div>
-						<div class="field">
-							<p><input type="text" id="input-name" class="select-style"></p>
-							<p><input type="text" id="input-tel" class="select-style"></p>
-							<p><input type="text" id="input-email" class="select-style"></p>
+              <p><input type="text" id="input-email" class="select-style"></p>
 						</div>
 					</div>
 				</fieldset>
@@ -115,7 +115,7 @@
 
 	</main>
 <footer class="flex-block flex-center">
-	<div class="flex-block flex-around container">
+	<div class="flex-block flex-between container">
 		<div>
 			<div class="flex-block flex-between logo"><img src='images/logo.svg' alt='logo'><h2>Лунное море</h2></div>
 			<p><small>&copy 2032 год</small></p>

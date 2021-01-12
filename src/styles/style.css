@@ -1,8 +1,8 @@
-:root { 
-        --dark: #303846;      
-        --green: #09d3ac;      
+:root {
+        --dark: #303846;
+        --green: #09d3ac;
         --light-secondary: #f7f7f7;
-	--light: #fff;
+        --light: #fff;
 }
 
 .flex-block {
@@ -21,9 +21,29 @@
 	justify-content: center;
 }
 
+.flex-align-center {
+  align-items: center;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
 .container {
-        width: 1000px;
-        padding: 60px 15px 60px 15px;
+  width: 1000px;
+  padding: 60px 15px 60px 15px;
+  margin: auto;
+}
+
+@media screen and (max-device-width: 1000px){
+  .container {
+    padding: 60px 0 60px 0;
+    font-size: 0.9em;
+  }
 }
 
 .width-30 {
@@ -46,7 +66,6 @@ body {
 	margin-top:60px;
 	margin-left: 0;
 	margin-right: 0;
-	flex-direction: column;
 	padding: 0;
 }
 
@@ -73,19 +92,22 @@ h2 {
 	left: 0;
 	right: 0;
 	height: 60px;
-	padding: 5px 20px 5px 20px;
+	padding: 5px 0 5px 20px;
 	background: var(--light);
 	font-weight: bold;
 }
 
 .horizontal-menu {
-	align-items: center;
-	justify-content: flex-end;
 	list-style: none;
+  font-size: 0.9em;
+}
+
+@media screen and (max-device-width: 1000px) {
+  .horizontal-menu {font-size: 0.68em}
 }
 
 .horizontal-menu li {
-	padding: 0 10px;
+	padding: 0 10px 0 0;
 }
 
 nav a {
@@ -100,53 +122,57 @@ nav a {
 .description {
 	width: 100%;
 	flex: 1 1 auto;
-	margin: 0 0 60px;
-	padding: 20px 0 20px;
+	margin: 0 ;
+	padding: 60px 0;
 	background: url("../images/banner.png");
 	background-position: center;
 	background-size: cover;
 	color: var(--light);
-	align-items: center;
-	align-content: center; 
-	justify-content: center;
 }
 
 .description .container {
+  font-weight: bold;
 	text-align: center;
 	padding: 0 40px;
 }
 
 .description .container img {
-	height: 10em;
+	height: 13em;
+}
+
+.description p {
+  margin: 20px 0 30px;
 }
 
 .logo img {
-	height: 3em;
-        margin-right: 10px;
+	height: 2em;
+  margin-right: 10px;
 
 }
 
 .width-30 img{
-        max-width: 100%;
-        max-height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.width-30 h2 {
+  white-space: pre;
 }
 
 .button{
 	text-decoration: none;
 	font-size: 1em;
-	font-weight: bold;
 	color: var(--light);
 	border: 2px solid var(--light);
 	border-radius: 10px;
-	margin: 0 10px;
-	padding: 10px;
+	padding: 15px;
 	cursor: pointer;
 }
 
 footer {
-        flex: 0 0 auto;
-        background-color: var(--dark);
-        color: var(--light);
+  flex: 0 0 auto;
+  background-color: var(--dark);
+  color: var(--light);
 	font-weight: bold;
 }
 
@@ -155,13 +181,6 @@ footer h2 {
 	color: light;
 }
 
-footer .container{
-	justify-content: space-between;
-	margin: 0 20px;
-}
-
-
-
 .background-secondary {
 	background-color: var(--light-secondary);
 }
@@ -169,6 +188,7 @@ footer .container{
 .order-form {
 	margin-left: auto;
 	margin-right: auto;
+  padding: 60px 0;
 }
 
 .form-container {
@@ -177,8 +197,12 @@ footer .container{
 	width: 50%;
 }
 
+@media screen and (max-device-width: 1000px){
+  .order-form legend { font-size: 1.5em}
+}
+
 .order-form fieldset {
-	margin: 10px 0;
+  margin: 20px;
 	border: 2px solid var(--green);
 }
 
@@ -189,31 +213,22 @@ footer .container{
 
 .order-form .button{
 	color: var(--green);
+  font-weight: bold;
 	border: 2px solid var(--green);
-	padding: 10px;
-	margin: 10px 0;
+	margin: 10px 20px;
 }
 
 .order-form h2 {
-	padding: 10px;
 	text-align: center;
 }
 
-.field-name {
-	margin: 0 20px;
-	grid-area: field-name;
+.field {
 	font-weight: bold;
 }
 
-.field {
-	margin: 0 20px;
-	grid-area: field;
-}
-
-.main-field {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-template-areas: "field-name field";
+.field p {
+  align-self: center;
+  width: 50%;
 }
 
 .select-style {
