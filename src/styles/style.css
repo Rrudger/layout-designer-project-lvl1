@@ -49,7 +49,10 @@
 
 .width-30 {
         width: 30%;
-        margin: 20px;
+}
+
+@media screen and (max-device-width: 1000px) {
+  .width-30 {margin: 20px}
 }
 
 .width-45 {
@@ -124,8 +127,7 @@ nav a {
 .description {
 	width: 100%;
 	flex: 1 1 auto;
-	margin: 0 ;
-	padding: 60px 0;
+	margin-bottom: 60px;
 	background: url("../images/banner.png");
 	background-position: center;
 	background-size: cover;
@@ -135,7 +137,7 @@ nav a {
 .description .container {
   font-weight: bold;
 	text-align: center;
-	padding: 0 40px;
+  padding: 60px 40px;
 }
 
 .description .container img {
