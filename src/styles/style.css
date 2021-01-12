@@ -36,7 +36,7 @@
 
 .container {
   width: 1000px;
-  padding: 60px 15px 60px 15px;
+  padding: 40px 0;
   margin: auto;
 }
 
@@ -127,7 +127,6 @@ nav a {
 .description {
 	width: 100%;
 	flex: 1 1 auto;
-	margin-bottom: 60px;
 	background: url("../images/banner.png");
 	background-position: center;
 	background-size: cover;
@@ -137,7 +136,6 @@ nav a {
 .description .container {
   font-weight: bold;
 	text-align: center;
-  padding: 60px 40px;
 }
 
 .description .container img {
